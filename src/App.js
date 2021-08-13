@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setDolar((total * tipo) / 1);
     setEuro((total * tipo) / 1.17);
-    setBitcoin((total * tipo) / 46303.70);
+    setBitcoin((total * tipo) / 46400.30);
   }, [total, tipo]);
 
 
@@ -39,7 +39,7 @@ function App() {
       <select onChange={event => setTipo(event.target.value)} value={tipo}>
         <option value={1}>Dólar</option>
         <option value={1.17}>Euro</option>
-        <option value={46303.70}>Bitcoin</option>
+        <option value={46400.30}>Bitcoin</option>
       </select>
       <input onChange={handleTotalChange} value={total} />
     </div>
